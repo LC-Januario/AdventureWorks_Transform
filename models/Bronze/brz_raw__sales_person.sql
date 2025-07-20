@@ -10,4 +10,4 @@ select
     cast(rowguid as string) as rowguid,
     cast(cast(ModifiedDate as string) as date) as modified_date
 
-from {{ source('raw', 'sales_person') }}
+from {{ source('raw', 'salesperson') }}

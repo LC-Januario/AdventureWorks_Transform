@@ -21,4 +21,4 @@ select
     cast(CurrencyRateID as string) as currency_rate_id,
     SubTotal as sub_total
 
-from {{ source('raw', 'sales_order_header') }}
+from {{ source('raw', 'salesorderheader') }}
