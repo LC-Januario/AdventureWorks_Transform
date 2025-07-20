@@ -2,7 +2,7 @@ sources:
   - name: raw
     description: "tabelas delta"
     database: ted_dev
-    schema: dev_luiz_januario
+    schema: dbt_adventureworks_raw
     tables: 
       - name: customer
         columns:
@@ -10,7 +10,7 @@ sources:
             tests: 
               - unique
               - not_null              
-      - name: country_region
+      - name: countryregion
         columns:
           - name: CountryRegionCode
             tests: 
@@ -22,7 +22,7 @@ sources:
             tests: 
               - unique
               - not_null   
-      - name: sales_order_header_sales_reason
+      - name: salesorderheadersalesreason
         columns:
           - name: SALESORDERID
             tests: 
@@ -30,31 +30,31 @@ sources:
           - name: SALESREASONID
             tests: 
               - not_null  
-      - name: sales_order_detail
+      - name: salesorderdetail
         columns:
           - name: SalesOrderDetailID
             tests: 
               - unique
               - not_null  
-      - name: sales_order_header
+      - name: salesorderheader
         columns:
           - name: SalesOrderID
             tests: 
               - unique
               - not_null  
-      - name: sales_person
+      - name: salesperson
         columns:
           - name: BusinessEntityID
             tests: 
               - unique
               - not_null  
-      - name: sales_reason
+      - name: salesreason
         columns:
           - name: SalesReasonID
             tests: 
               - unique
               - not_null
-      - name: sales_territory
+      - name: salesterritory
         columns:
           - name: TerritoryID
             tests: 
@@ -72,13 +72,13 @@ sources:
             tests: 
               - unique
               - not_null
-      - name: product_category
+      - name: productcategory
         columns:
           - name: ProductCategoryID
             tests: 
               - unique
               - not_null
-      - name: product_subcategory
+      - name: productsubcategory
         columns:
           - name: ProductSubcategoryID
             tests: 

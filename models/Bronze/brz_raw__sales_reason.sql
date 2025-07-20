@@ -5,4 +5,4 @@ select
     ReasonType as reason_type,
     cast(cast(ModifiedDate as string) as date) as modified_date
 
-from {{ source('raw', 'sales_reason') }}
+from {{ source('raw', 'salesreason') }}

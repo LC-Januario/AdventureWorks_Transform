@@ -4,4 +4,4 @@ select
     cast(Name as string) as name,
     cast(cast(ModifiedDate as string) as date) as modified_date
 
-from {{ source('raw', 'country_region') }}
+from {{ source('raw', 'countryregion') }}

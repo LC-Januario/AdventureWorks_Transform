@@ -4,4 +4,4 @@ select
     cast(SalesReasonID as string) as sales_reason_id,
     cast(cast(ModifiedDate as string) as date) as modified_date
 
-from {{ source('raw', 'sales_order_header_sales_reason') }}
+from {{ source('raw', 'salesorderheadersalesreason') }}
