@@ -76,3 +76,7 @@ dbt run
 
 # Run tests
 dbt test
+
+### Orchestrating in Databricks Workflows
+
+# In order to create a orchestration pipeline, create a job in Databricks with one task for each notebook in the "PipelineNotebooks" directory.
